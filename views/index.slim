@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Test twitter application
+  body
+    h1 Test twitter application
+
+    #query-form
+      form action="/" method="GET"
+        p
+          | Query:
+          input type="text" name="query" value=@query
+        input type="submit"
+
+    - if @tweets
+      #tweets
+        p= @tweets
