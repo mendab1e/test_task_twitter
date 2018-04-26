@@ -1,12 +1,32 @@
-class TwitterFetcher
-  attr_reader :query, :page
+require_relative 'twitter_fetcher/result_presenter'
 
-  def initialize(query, page: 1)
+class TwitterFetcher
+  PER_PAGE = 10
+
+  require 'twitter'
+  attr_reader :query, :from_id
+
+  def initialize(query, from_id: nil)
     @query = query
-    @page = page
+    @from_id = from_id
   end
 
   def fetch
-    %w(stub1 stub2 stub3)
+    ResultPresenter.new(search_results: request_tweets)
+  rescue => e
+    ResultPresenter.new(error: e)
+  end
+
+  private
+
+  def request_tweets
+    client.search(query, count: PER_PAGE, result_type: 'recent', since_id: from_id)
+  end
+
+  def client
+    @client ||= Twitter::REST::Client.new do |config|
+      config.consumer_key    = ENV['CONSUMER_KEY']
+      config.consumer_secret = ENV['CONSUMER_SECRET']
+    end
   end
 end
