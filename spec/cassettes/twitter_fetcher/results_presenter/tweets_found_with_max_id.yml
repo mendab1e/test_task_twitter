@@ -1,0 +1,260 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      User-Agent:
+      - TwitterRubyGem/6.2.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - "<TOKEN>"
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '155'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 26 Apr 2018 21:37:13 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 26 Apr 2018 21:37:13 GMT
+      Ml:
+      - A
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_o
+      Set-Cookie:
+      - guest_id=v1%3A152477863382737175; Expires=Sat, 25 Apr 2020 21:37:13 GMT; Path=/;
+        Domain=.twitter.com
+      - personalization_id="v1_63HtROx/ystwTuq/5K4AMQ=="; Expires=Sat, 25 Apr 2020
+        21:37:13 GMT; Path=/; Domain=.twitter.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - 81b41ebe89289455efccdd748ba2158b
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Response-Time:
+      - '116'
+      X-Transaction:
+      - 00d929f200732360
+      X-Tsa-Request-Body-Time:
+      - '0'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      X-Xss-Protection:
+      - 1; mode=block; report=https://twitter.com/i/xss_report
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"bearer","access_token":"AAAAAAAAAAAAAAAAAAAAAFgYCQAAAAAA8Jvm2Ln8cJJnGX8ndCWg%2F9Fyt7U%3DFLi0WSOekrITfy2XqWrkJdTi8yKqPvMOipiugk9thYnJNWPPFf"}'
+    http_version: 
+  recorded_at: Thu, 26 Apr 2018 21:37:13 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/search/tweets.json?count=10&max_id=988849425010384896&q=cute%20capybara
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/6.2.0
+      Authorization:
+      - "<TOKEN>"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '43140'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 26 Apr 2018 21:37:14 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 26 Apr 2018 21:37:14 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_o
+      Set-Cookie:
+      - guest_id=v1%3A152477863424621891; Expires=Sat, 25 Apr 2020 21:37:14 GMT; Path=/;
+        Domain=.twitter.com
+      - personalization_id="v1_rdTe3nGBnBCXABtpsHeUeA=="; Expires=Sat, 25 Apr 2020
+        21:37:14 GMT; Path=/; Domain=.twitter.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - 4885a0771c33c5915ff80b586892bb23
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '450'
+      X-Rate-Limit-Remaining:
+      - '436'
+      X-Rate-Limit-Reset:
+      - '1524778880'
+      X-Response-Time:
+      - '222'
+      X-Transaction:
+      - '00884c2500b03af5'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block; report=https://twitter.com/i/xss_report
+    body:
+      encoding: UTF-8
+      string: '{"statuses":[{"created_at":"Tue Apr 24 18:37:29 +0000 2018","id":988849425010384896,"id_str":"988849425010384896","text":"Mais
+        uma das 8 capivarinhas que vivem l\u00e1 no lago do \u2665\ufe0f\n.\n.\n.\n#capybara
+        #cute #babies #inlove\u2026 https:\/\/t.co\/TlBIn8eKFB","truncated":false,"entities":{"hashtags":[{"text":"capybara","indices":[61,70]},{"text":"cute","indices":[71,76]},{"text":"babies","indices":[77,84]},{"text":"inlove","indices":[85,92]}],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/TlBIn8eKFB","expanded_url":"https:\/\/www.instagram.com\/p\/Bh9qgzdleyS\/","display_url":"instagram.com\/p\/Bh9qgzdleyS\/","indices":[94,117]}]},"metadata":{"iso_language_code":"pt","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/instagram.com\" rel=\"nofollow\"\u003eInstagram\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":2181465676,"id_str":"2181465676","name":"Fabiane
+        Biscaya","screen_name":"Misanthropearl","location":"Earth ","description":"Veterinary
+        Medicine student, animal rights, nature, Japan, misanthrope girl and crazy
+        dog lady. Trying to minimise the suffering of sentient beings. \u2661\u266a","url":"https:\/\/t.co\/D3EZYwgmw9","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/D3EZYwgmw9","expanded_url":"https:\/\/www.instagram.com\/fabia.nyan\/?hl=pt-br","display_url":"instagram.com\/fabia.nyan\/?hl\u2026","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":208,"friends_count":488,"listed_count":2,"created_at":"Fri
+        Nov 15 02:49:28 +0000 2013","favourites_count":1423,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":555,"lang":"pt","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"B8652E","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/378800000146507931\/bD3b6B3Y.jpeg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/378800000146507931\/bD3b6B3Y.jpeg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/763908075015249920\/2cXL9YLf_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/763908075015249920\/2cXL9YLf_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2181465676\/1456773549","profile_link_color":"C7967A","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"pt"},{"created_at":"Tue
+        Apr 24 17:21:45 +0000 2018","id":988830367481319424,"id_str":"988830367481319424","text":"RT
+        @Nori_Studio: Capybara enamel pin, Capybara pin, cute animal pin https:\/\/t.co\/H1erDy2wRs
+        via @Etsy #epiconetsy #etsychaching #etsymntt #\u2026","truncated":false,"entities":{"hashtags":[{"text":"epiconetsy","indices":[102,113]},{"text":"etsychaching","indices":[114,127]},{"text":"etsymntt","indices":[128,137]}],"symbols":[],"user_mentions":[{"screen_name":"Nori_Studio","name":"Miri","id":3343543371,"id_str":"3343543371","indices":[3,15]},{"screen_name":"Etsy","name":"Etsy","id":11522502,"id_str":"11522502","indices":[96,101]}],"urls":[{"url":"https:\/\/t.co\/H1erDy2wRs","expanded_url":"https:\/\/etsy.me\/2FdVkyZ","display_url":"etsy.me\/2FdVkyZ","indices":[68,91]}]},"metadata":{"iso_language_code":"ro","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3343543371,"id_str":"3343543371","name":"Miri","screen_name":"Nori_Studio","location":"","description":"I
+        am Miri, the owner and maker of Noristudio. I make needle felted creatures
+        wearing acorn berets and other wool felt objects.","url":"https:\/\/t.co\/N0TrZaD3qv","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/N0TrZaD3qv","expanded_url":"http:\/\/www.noristudio.com","display_url":"noristudio.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":1212,"friends_count":631,"listed_count":332,"created_at":"Wed
+        Jun 24 03:23:31 +0000 2015","favourites_count":1369,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":35402,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3343543371\/1459802685","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Tue
+        Apr 24 17:19:50 +0000 2018","id":988829885023039491,"id_str":"988829885023039491","text":"Capybara
+        enamel pin, Capybara pin, cute animal pin https:\/\/t.co\/H1erDy2wRs via @Etsy
+        #epiconetsy #etsychaching\u2026 https:\/\/t.co\/yTRDbLAJx1","truncated":true,"entities":{"hashtags":[{"text":"epiconetsy","indices":[85,96]},{"text":"etsychaching","indices":[97,110]}],"symbols":[],"user_mentions":[{"screen_name":"Etsy","name":"Etsy","id":11522502,"id_str":"11522502","indices":[79,84]}],"urls":[{"url":"https:\/\/t.co\/H1erDy2wRs","expanded_url":"https:\/\/etsy.me\/2FdVkyZ","display_url":"etsy.me\/2FdVkyZ","indices":[51,74]},{"url":"https:\/\/t.co\/yTRDbLAJx1","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/988829885023039491","display_url":"twitter.com\/i\/web\/status\/9\u2026","indices":[112,135]}]},"metadata":{"iso_language_code":"ro","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3343543371,"id_str":"3343543371","name":"Miri","screen_name":"Nori_Studio","location":"","description":"I
+        am Miri, the owner and maker of Noristudio. I make needle felted creatures
+        wearing acorn berets and other wool felt objects.","url":"https:\/\/t.co\/N0TrZaD3qv","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/N0TrZaD3qv","expanded_url":"http:\/\/www.noristudio.com","display_url":"noristudio.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":1212,"friends_count":631,"listed_count":332,"created_at":"Wed
+        Jun 24 03:23:31 +0000 2015","favourites_count":1369,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":35402,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3343543371\/1459802685","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":2,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ro"},"is_quote_status":false,"retweet_count":1,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ro"},{"created_at":"Tue
+        Apr 24 17:19:50 +0000 2018","id":988829885023039491,"id_str":"988829885023039491","text":"Capybara
+        enamel pin, Capybara pin, cute animal pin https:\/\/t.co\/H1erDy2wRs via @Etsy
+        #epiconetsy #etsychaching\u2026 https:\/\/t.co\/yTRDbLAJx1","truncated":true,"entities":{"hashtags":[{"text":"epiconetsy","indices":[85,96]},{"text":"etsychaching","indices":[97,110]}],"symbols":[],"user_mentions":[{"screen_name":"Etsy","name":"Etsy","id":11522502,"id_str":"11522502","indices":[79,84]}],"urls":[{"url":"https:\/\/t.co\/H1erDy2wRs","expanded_url":"https:\/\/etsy.me\/2FdVkyZ","display_url":"etsy.me\/2FdVkyZ","indices":[51,74]},{"url":"https:\/\/t.co\/yTRDbLAJx1","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/988829885023039491","display_url":"twitter.com\/i\/web\/status\/9\u2026","indices":[112,135]}]},"metadata":{"iso_language_code":"ro","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3343543371,"id_str":"3343543371","name":"Miri","screen_name":"Nori_Studio","location":"","description":"I
+        am Miri, the owner and maker of Noristudio. I make needle felted creatures
+        wearing acorn berets and other wool felt objects.","url":"https:\/\/t.co\/N0TrZaD3qv","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/N0TrZaD3qv","expanded_url":"http:\/\/www.noristudio.com","display_url":"noristudio.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":1212,"friends_count":631,"listed_count":332,"created_at":"Wed
+        Jun 24 03:23:31 +0000 2015","favourites_count":1369,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":35402,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3343543371\/1459802685","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":1,"favorite_count":2,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ro"},{"created_at":"Tue
+        Apr 24 16:10:19 +0000 2018","id":988812390568312832,"id_str":"988812390568312832","text":"I
+        knit a #capybara. I don\u2019t think the coloring is scientifically accurate
+        but it sure is cute. #scientistswhoknit https:\/\/t.co\/6ATKLA0tx9","truncated":false,"entities":{"hashtags":[{"text":"capybara","indices":[9,18]},{"text":"scientistswhoknit","indices":[95,113]}],"symbols":[],"user_mentions":[],"urls":[],"media":[{"id":988812381886210048,"id_str":"988812381886210048","indices":[114,137],"media_url":"http:\/\/pbs.twimg.com\/media\/Dbj3n1PV4AAOfxJ.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/Dbj3n1PV4AAOfxJ.jpg","url":"https:\/\/t.co\/6ATKLA0tx9","display_url":"pic.twitter.com\/6ATKLA0tx9","expanded_url":"https:\/\/twitter.com\/AshRecEco\/status\/988812390568312832\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":2048,"h":1915,"resize":"fit"},"medium":{"w":1200,"h":1122,"resize":"fit"},"small":{"w":680,"h":636,"resize":"fit"}}}]},"extended_entities":{"media":[{"id":988812381886210048,"id_str":"988812381886210048","indices":[114,137],"media_url":"http:\/\/pbs.twimg.com\/media\/Dbj3n1PV4AAOfxJ.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/Dbj3n1PV4AAOfxJ.jpg","url":"https:\/\/t.co\/6ATKLA0tx9","display_url":"pic.twitter.com\/6ATKLA0tx9","expanded_url":"https:\/\/twitter.com\/AshRecEco\/status\/988812390568312832\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":2048,"h":1915,"resize":"fit"},"medium":{"w":1200,"h":1122,"resize":"fit"},"small":{"w":680,"h":636,"resize":"fit"}}},{"id":988812381894541312,"id_str":"988812381894541312","indices":[114,137],"media_url":"http:\/\/pbs.twimg.com\/media\/Dbj3n1RVAAAL33X.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/Dbj3n1RVAAAL33X.jpg","url":"https:\/\/t.co\/6ATKLA0tx9","display_url":"pic.twitter.com\/6ATKLA0tx9","expanded_url":"https:\/\/twitter.com\/AshRecEco\/status\/988812390568312832\/photo\/1","type":"photo","sizes":{"medium":{"w":1200,"h":1200,"resize":"fit"},"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":2048,"h":2048,"resize":"fit"},"small":{"w":680,"h":680,"resize":"fit"}}}]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1872299114,"id_str":"1872299114","name":"Ashley
+        D''Antonio","screen_name":"AshRecEco","location":"Corvallis, OR","description":"Assistant
+        Professor at Oregon State. I study the relationship between outdoor recreation
+        & ecological impacts. I also knit. Opinions are my own.","url":"https:\/\/t.co\/CYRHdBZdf2","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/CYRHdBZdf2","expanded_url":"http:\/\/ashleydantonio.weebly.com\/","display_url":"ashleydantonio.weebly.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":388,"friends_count":479,"listed_count":25,"created_at":"Mon
+        Sep 16 16:46:00 +0000 2013","favourites_count":1436,"utc_offset":null,"time_zone":null,"geo_enabled":true,"verified":false,"statuses_count":1269,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"709397","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme6\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme6\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/892793325320679424\/pmyNKk78_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/892793325320679424\/pmyNKk78_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/1872299114\/1461869673","profile_link_color":"3C57C2","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"A0C5C7","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":{"id":"4da74513442e5fc5","url":"https:\/\/api.twitter.com\/1.1\/geo\/id\/4da74513442e5fc5.json","place_type":"city","name":"Corvallis","full_name":"Corvallis,
+        OR","country_code":"US","country":"United States","contained_within":[],"bounding_box":{"type":"Polygon","coordinates":[[[-123.343425,44.527244],[-123.215262,44.527244],[-123.215262,44.611247],[-123.343425,44.611247]]]},"attributes":{}},"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":7,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Mon
+        Apr 23 12:16:11 +0000 2018","id":988391078293204993,"id_str":"988391078293204993","text":"@joshgroban
+        One of Japanese fan has a great idea. \uff0d\uff0dYou enjoyed Hedgehogs and
+        Micky mouse \ud83d\udc2d . Maybe you saw Capybar\u2026 https:\/\/t.co\/Ixbn1kkw22","truncated":true,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"joshgroban","name":"josh
+        groban","id":18009781,"id_str":"18009781","indices":[0,11]}],"urls":[{"url":"https:\/\/t.co\/Ixbn1kkw22","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/988391078293204993","display_url":"twitter.com\/i\/web\/status\/9\u2026","indices":[117,140]}]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"https:\/\/mobile.twitter.com\" rel=\"nofollow\"\u003eTwitter Lite\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":18009781,"in_reply_to_user_id_str":"18009781","in_reply_to_screen_name":"joshgroban","user":{"id":42280887,"id_str":"42280887","name":"T.Y","screen_name":"LGodzilla","location":"Akita
+        pref,Japan","description":"LadyGodzilla is from Japan.She loves Josh Groban.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":386,"friends_count":300,"listed_count":16,"created_at":"Sun
+        May 24 21:02:11 +0000 2009","favourites_count":43698,"utc_offset":32400,"time_zone":"Tokyo","geo_enabled":true,"verified":false,"statuses_count":79227,"lang":"ja","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/588565158399606784\/deyQeelk.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/588565158399606784\/deyQeelk.jpg","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/876098031296299009\/JEf3JSQN_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/876098031296299009\/JEf3JSQN_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/42280887\/1518276037","profile_link_color":"0084B4","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"},{"created_at":"Mon
+        Apr 23 12:04:03 +0000 2018","id":988388026563878912,"id_str":"988388026563878912","text":"Capybara!!
+        Closest I have ever been to one! @HanwellZoo #ealing #London #wildlife #capybara
+        #animals #nature #cute\u2026 https:\/\/t.co\/vVzibadZ6E","truncated":true,"entities":{"hashtags":[{"text":"ealing","indices":[56,63]},{"text":"London","indices":[64,71]},{"text":"wildlife","indices":[72,81]},{"text":"capybara","indices":[82,91]},{"text":"animals","indices":[92,100]},{"text":"nature","indices":[101,108]},{"text":"cute","indices":[109,114]}],"symbols":[],"user_mentions":[{"screen_name":"HanwellZoo","name":"Hanwell
+        Zoo","id":2801761486,"id_str":"2801761486","indices":[44,55]}],"urls":[{"url":"https:\/\/t.co\/vVzibadZ6E","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/988388026563878912","display_url":"twitter.com\/i\/web\/status\/9\u2026","indices":[116,139]}]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":2976210971,"id_str":"2976210971","name":"Hanz
+        J Taylor","screen_name":"blondiemunchkin","location":"Yiewsley","description":"Airline
+        worker, Endometriosis sufferer living in London (northern-ish heart) loves
+        tdg cards, music, relaxation, healthy lifestyle and travel.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":491,"friends_count":528,"listed_count":8,"created_at":"Tue
+        Jan 13 11:10:04 +0000 2015","favourites_count":398,"utc_offset":-25200,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":793,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/986843252727996416\/7HgoyLXL_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/986843252727996416\/7HgoyLXL_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2976210971\/1524480730","profile_link_color":"9266CC","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":1,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},{"created_at":"Mon
+        Apr 23 06:14:14 +0000 2018","id":988299993772519424,"id_str":"988299993772519424","text":"RT
+        @ZephyrOrigami: Capybara\u6c34\u8c5a\nDesigned by @sakusaku858 \nWonderful
+        cute shape!\n\u53ef\u7231\u7684\u5c0f\u6c34\u8c5a\uff01 https:\/\/t.co\/5bLmEh2ecI","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"ZephyrOrigami","name":"\u5218\u4f36\u75c5\u9152","id":806101342263582720,"id_str":"806101342263582720","indices":[3,17]},{"screen_name":"sakusaku858","name":"\u3055\u304fB","id":119038830,"id_str":"119038830","indices":[42,54]}],"urls":[],"media":[{"id":988027080251265025,"id_str":"988027080251265025","indices":[86,109],"media_url":"http:\/\/pbs.twimg.com\/media\/DbYtZQrX0AE75di.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/DbYtZQrX0AE75di.jpg","url":"https:\/\/t.co\/5bLmEh2ecI","display_url":"pic.twitter.com\/5bLmEh2ecI","expanded_url":"https:\/\/twitter.com\/ZephyrOrigami\/status\/988027321478205440\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":1200,"h":900,"resize":"fit"},"small":{"w":680,"h":510,"resize":"fit"},"large":{"w":2048,"h":1536,"resize":"fit"}},"source_status_id":988027321478205440,"source_status_id_str":"988027321478205440","source_user_id":806101342263582720,"source_user_id_str":"806101342263582720"}]},"extended_entities":{"media":[{"id":988027080251265025,"id_str":"988027080251265025","indices":[86,109],"media_url":"http:\/\/pbs.twimg.com\/media\/DbYtZQrX0AE75di.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/DbYtZQrX0AE75di.jpg","url":"https:\/\/t.co\/5bLmEh2ecI","display_url":"pic.twitter.com\/5bLmEh2ecI","expanded_url":"https:\/\/twitter.com\/ZephyrOrigami\/status\/988027321478205440\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":1200,"h":900,"resize":"fit"},"small":{"w":680,"h":510,"resize":"fit"},"large":{"w":2048,"h":1536,"resize":"fit"}},"source_status_id":988027321478205440,"source_status_id_str":"988027321478205440","source_user_id":806101342263582720,"source_user_id_str":"806101342263582720"}]},"metadata":{"iso_language_code":"ja","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter
+        for iPhone\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1379495996,"id_str":"1379495996","name":"\u4eca\u3092\u7cbe\u4e00\u676f\u751f\u304d\u308b\u8005","screen_name":"a_ki19","location":"","description":"\u30e9\u30a4\u30c8\u30ce\u30d9\u30eb\u30fb\u30cd\u30c3\u30c8\u5c0f\u8aac\u5358\u884c\u672c(\u65b0\u6587\u82b8)\u3001\u97f3\u697d\u3001\u3054\u98ef\u3001\u6298\u308a\u7d19\u304c\u597d\u304d\u3067\u3059\u3002","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":59,"friends_count":136,"listed_count":1,"created_at":"Thu
+        Apr 25 13:44:32 +0000 2013","favourites_count":267,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":2714,"lang":"ja","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/612829026932015104\/0MG-SXZ5_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/612829026932015104\/0MG-SXZ5_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/1379495996\/1496429715","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Sun
+        Apr 22 12:10:44 +0000 2018","id":988027321478205440,"id_str":"988027321478205440","text":"Capybara\u6c34\u8c5a\nDesigned
+        by @sakusaku858 \nWonderful cute shape!\n\u53ef\u7231\u7684\u5c0f\u6c34\u8c5a\uff01
+        https:\/\/t.co\/5bLmEh2ecI","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[{"screen_name":"sakusaku858","name":"\u3055\u304fB","id":119038830,"id_str":"119038830","indices":[23,35]}],"urls":[],"media":[{"id":988027080251265025,"id_str":"988027080251265025","indices":[67,90],"media_url":"http:\/\/pbs.twimg.com\/media\/DbYtZQrX0AE75di.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/DbYtZQrX0AE75di.jpg","url":"https:\/\/t.co\/5bLmEh2ecI","display_url":"pic.twitter.com\/5bLmEh2ecI","expanded_url":"https:\/\/twitter.com\/ZephyrOrigami\/status\/988027321478205440\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":1200,"h":900,"resize":"fit"},"small":{"w":680,"h":510,"resize":"fit"},"large":{"w":2048,"h":1536,"resize":"fit"}}}]},"extended_entities":{"media":[{"id":988027080251265025,"id_str":"988027080251265025","indices":[67,90],"media_url":"http:\/\/pbs.twimg.com\/media\/DbYtZQrX0AE75di.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/DbYtZQrX0AE75di.jpg","url":"https:\/\/t.co\/5bLmEh2ecI","display_url":"pic.twitter.com\/5bLmEh2ecI","expanded_url":"https:\/\/twitter.com\/ZephyrOrigami\/status\/988027321478205440\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"medium":{"w":1200,"h":900,"resize":"fit"},"small":{"w":680,"h":510,"resize":"fit"},"large":{"w":2048,"h":1536,"resize":"fit"}}}]},"metadata":{"iso_language_code":"ja","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":806101342263582720,"id_str":"806101342263582720","name":"\u5218\u4f36\u75c5\u9152","screen_name":"ZephyrOrigami","location":"\u5317\u4eac,
+        \u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd","description":"Origami For Fun","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":84,"friends_count":135,"listed_count":0,"created_at":"Tue
+        Dec 06 11:41:51 +0000 2016","favourites_count":371,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":54,"lang":"zh-cn","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/966279356321447936\/_5FJ8k-o_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/966279356321447936\/_5FJ8k-o_normal.jpg","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":true,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":4,"favorite_count":23,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ja"},"is_quote_status":false,"retweet_count":4,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ja"},{"created_at":"Mon
+        Apr 23 00:20:17 +0000 2018","id":988210917644079104,"id_str":"988210917644079104","text":"Capybara
+        enamel pin, Capybara pin, cute animal pin https:\/\/t.co\/aYqPm8bSNr via @Etsy
+        #pingame #epiconetsy\u2026 https:\/\/t.co\/TcizrteGWH","truncated":true,"entities":{"hashtags":[{"text":"pingame","indices":[85,93]},{"text":"epiconetsy","indices":[94,105]}],"symbols":[],"user_mentions":[{"screen_name":"Etsy","name":"Etsy","id":11522502,"id_str":"11522502","indices":[79,84]}],"urls":[{"url":"https:\/\/t.co\/aYqPm8bSNr","expanded_url":"https:\/\/etsy.me\/2F7ZBEt","display_url":"etsy.me\/2F7ZBEt","indices":[51,74]},{"url":"https:\/\/t.co\/TcizrteGWH","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/988210917644079104","display_url":"twitter.com\/i\/web\/status\/9\u2026","indices":[107,130]}]},"metadata":{"iso_language_code":"ro","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3343543371,"id_str":"3343543371","name":"Miri","screen_name":"Nori_Studio","location":"","description":"I
+        am Miri, the owner and maker of Noristudio. I make needle felted creatures
+        wearing acorn berets and other wool felt objects.","url":"https:\/\/t.co\/N0TrZaD3qv","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/N0TrZaD3qv","expanded_url":"http:\/\/www.noristudio.com","display_url":"noristudio.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":1212,"friends_count":631,"listed_count":332,"created_at":"Wed
+        Jun 24 03:23:31 +0000 2015","favourites_count":1369,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":35402,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3343543371\/1459802685","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"ro"},{"created_at":"Sun
+        Apr 22 16:15:11 +0000 2018","id":988088839892848641,"id_str":"988088839892848641","text":"RT
+        @Nori_Studio: Capybara enamel pin https:\/\/t.co\/PAIsJhVqZs via @Etsy #epiconetsy
+        #etsychaching #etsymntt #craftshout #etsyrt #etsysocial\u2026","truncated":false,"entities":{"hashtags":[{"text":"epiconetsy","indices":[71,82]},{"text":"etsychaching","indices":[83,96]},{"text":"etsymntt","indices":[97,106]},{"text":"craftshout","indices":[107,118]},{"text":"etsyrt","indices":[119,126]},{"text":"etsysocial","indices":[127,138]}],"symbols":[],"user_mentions":[{"screen_name":"Nori_Studio","name":"Miri","id":3343543371,"id_str":"3343543371","indices":[3,15]},{"screen_name":"Etsy","name":"Etsy","id":11522502,"id_str":"11522502","indices":[65,70]}],"urls":[{"url":"https:\/\/t.co\/PAIsJhVqZs","expanded_url":"https:\/\/etsy.me\/2qUHldt","display_url":"etsy.me\/2qUHldt","indices":[37,60]}]},"metadata":{"iso_language_code":"es","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3343543371,"id_str":"3343543371","name":"Miri","screen_name":"Nori_Studio","location":"","description":"I
+        am Miri, the owner and maker of Noristudio. I make needle felted creatures
+        wearing acorn berets and other wool felt objects.","url":"https:\/\/t.co\/N0TrZaD3qv","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/N0TrZaD3qv","expanded_url":"http:\/\/www.noristudio.com","display_url":"noristudio.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":1212,"friends_count":631,"listed_count":332,"created_at":"Wed
+        Jun 24 03:23:31 +0000 2015","favourites_count":1369,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":35402,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3343543371\/1459802685","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Sun
+        Apr 22 00:40:53 +0000 2018","id":987853712638070785,"id_str":"987853712638070785","text":"Capybara
+        enamel pin https:\/\/t.co\/PAIsJhVqZs via @Etsy #epiconetsy #etsychaching
+        #etsymntt #craftshout #etsyrt\u2026 https:\/\/t.co\/2t8UhhwBjv","truncated":true,"entities":{"hashtags":[{"text":"epiconetsy","indices":[54,65]},{"text":"etsychaching","indices":[66,79]},{"text":"etsymntt","indices":[80,89]},{"text":"craftshout","indices":[90,101]},{"text":"etsyrt","indices":[102,109]}],"symbols":[],"user_mentions":[{"screen_name":"Etsy","name":"Etsy","id":11522502,"id_str":"11522502","indices":[48,53]}],"urls":[{"url":"https:\/\/t.co\/PAIsJhVqZs","expanded_url":"https:\/\/etsy.me\/2qUHldt","display_url":"etsy.me\/2qUHldt","indices":[20,43]},{"url":"https:\/\/t.co\/2t8UhhwBjv","expanded_url":"https:\/\/twitter.com\/i\/web\/status\/987853712638070785","display_url":"twitter.com\/i\/web\/status\/9\u2026","indices":[111,134]}]},"metadata":{"iso_language_code":"es","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3343543371,"id_str":"3343543371","name":"Miri","screen_name":"Nori_Studio","location":"","description":"I
+        am Miri, the owner and maker of Noristudio. I make needle felted creatures
+        wearing acorn berets and other wool felt objects.","url":"https:\/\/t.co\/N0TrZaD3qv","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/N0TrZaD3qv","expanded_url":"http:\/\/www.noristudio.com","display_url":"noristudio.com","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":1212,"friends_count":631,"listed_count":332,"created_at":"Wed
+        Jun 24 03:23:31 +0000 2015","favourites_count":1369,"utc_offset":-14400,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":35402,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/717090627519795200\/aPj0v7gz_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/3343543371\/1459802685","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":2,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"es"},"is_quote_status":false,"retweet_count":2,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"es"},{"created_at":"Sun
+        Apr 22 15:17:46 +0000 2018","id":988074387504091137,"id_str":"988074387504091137","text":"I
+        tried to post this question before but made the mistake of including a cute
+        clip of a capybara\u2026 https:\/\/t.co\/BSNCt4Z3pF","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/BSNCt4Z3pF","expanded_url":"https:\/\/www.instagram.com\/p\/Bh4KERogxHn\/","display_url":"instagram.com\/p\/Bh4KERogxHn\/","indices":[98,121]}]},"metadata":{"iso_language_code":"en","result_type":"recent"},"source":"\u003ca
+        href=\"http:\/\/instagram.com\" rel=\"nofollow\"\u003eInstagram\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":17914835,"id_str":"17914835","name":"Barbara
+        Heidenreich","screen_name":"GoodBirdInc","location":"Austin, Texas","description":"Animal
+        training professional for 25 + years. I teach others how to have a great relationship
+        with the animals in their lives (from rabbits to rhinos!)","url":"http:\/\/t.co\/2QzjkEH39j","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/2QzjkEH39j","expanded_url":"http:\/\/www.BarbarasFFAT.com","display_url":"BarbarasFFAT.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":2369,"friends_count":582,"listed_count":77,"created_at":"Sat
+        Dec 06 02:46:03 +0000 2008","favourites_count":41,"utc_offset":-18000,"time_zone":"Central
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":7103,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"ACDED6","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme18\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/66519886\/Heidenreich-blue_throat_web_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/66519886\/Heidenreich-blue_throat_web_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/17914835\/1357754342","profile_link_color":"038543","profile_sidebar_border_color":"EEEEEE","profile_sidebar_fill_color":"F6F6F6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":null,"follow_request_sent":null,"notifications":null,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"}],"search_metadata":{"completed_in":0.092,"max_id":988849425010384896,"max_id_str":"988849425010384896","next_results":"?max_id=988074387504091136&q=cute%20capybara&count=10&include_entities=1","query":"cute+capybara","refresh_url":"?since_id=988849425010384896&q=cute%20capybara&include_entities=1","count":10,"since_id":0,"since_id_str":"0"}}'
+    http_version: 
+  recorded_at: Thu, 26 Apr 2018 21:37:14 GMT
+recorded_with: VCR 4.0.0

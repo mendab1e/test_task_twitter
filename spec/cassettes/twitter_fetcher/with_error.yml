@@ -35,11 +35,11 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Thu, 26 Apr 2018 19:08:24 GMT
+      - Thu, 26 Apr 2018 21:35:12 GMT
       Expires:
       - Tue, 31 Mar 1981 05:00:00 GMT
       Last-Modified:
-      - Thu, 26 Apr 2018 19:08:24 GMT
+      - Thu, 26 Apr 2018 21:35:12 GMT
       Ml:
       - A
       Pragma:
@@ -47,26 +47,26 @@ http_interactions:
       Server:
       - tsa_o
       Set-Cookie:
-      - guest_id=v1%3A152476970482130790; Expires=Sat, 25 Apr 2020 19:08:24 GMT; Path=/;
+      - guest_id=v1%3A152477851221903595; Expires=Sat, 25 Apr 2020 21:35:12 GMT; Path=/;
         Domain=.twitter.com
-      - personalization_id="v1_28wWVFnpkBQSU24SfHPZuQ=="; Expires=Sat, 25 Apr 2020
-        19:08:24 GMT; Path=/; Domain=.twitter.com
+      - personalization_id="v1_fZqa9ohRF4V1zqc7/s4aZg=="; Expires=Sat, 25 Apr 2020
+        21:35:12 GMT; Path=/; Domain=.twitter.com
       Status:
       - 403 Forbidden
       Strict-Transport-Security:
       - max-age=631138519
       X-Connection-Hash:
-      - 197269f36724e115679663c930fb2f65
+      - 7c4d475cb2c6378cb0d0c62515743094
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
       X-Response-Time:
-      - '105'
+      - '106'
       X-Transaction:
-      - 00b1ad7200daf800
+      - '009596b20065d86c'
       X-Tsa-Request-Body-Time:
-      - '0'
+      - '1'
       X-Twitter-Response-Tags:
       - BouncerCompliant
       X-Ua-Compatible:
@@ -77,10 +77,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"errors":[{"code":99,"message":"Unable to verify your credentials","label":"authenticity_token_error"}]}'
     http_version: 
-  recorded_at: Thu, 26 Apr 2018 19:08:24 GMT
+  recorded_at: Thu, 26 Apr 2018 21:35:12 GMT
 - request:
     method: get
-    uri: https://api.twitter.com/1.1/search/tweets.json?count=10&q=cute%20capybara&result_type=recent&since_id
+    uri: https://api.twitter.com/1.1/search/tweets.json?count=10&max_id&q=cute%20capybara
     body:
       encoding: UTF-8
       string: ''
@@ -105,23 +105,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 26 Apr 2018 19:08:25 GMT
+      - Thu, 26 Apr 2018 21:35:12 GMT
       Server:
       - tsa_o
       Set-Cookie:
-      - guest_id=v1%3A152476970521687855; Expires=Sat, 25 Apr 2020 19:08:25 GMT; Path=/;
+      - guest_id=v1%3A152477851260524998; Expires=Sat, 25 Apr 2020 21:35:12 GMT; Path=/;
         Domain=.twitter.com
-      - personalization_id="v1_0M3nDg8auBBvUgg3hbbKKg=="; Expires=Sat, 25 Apr 2020
-        19:08:25 GMT; Path=/; Domain=.twitter.com
+      - personalization_id="v1_mAHoFjUKywFiiVIaY3lIIA=="; Expires=Sat, 25 Apr 2020
+        21:35:12 GMT; Path=/; Domain=.twitter.com
       Strict-Transport-Security:
       - max-age=631138519
       X-Connection-Hash:
-      - db75a7667fb8bc8482b92ea0429d5814
+      - 3e108867198f33f21175d6c790e217c0
       X-Response-Time:
-      - '104'
+      - '102'
     body:
       encoding: UTF-8
       string: '{"errors":[{"code":215,"message":"Bad Authentication data."}]}'
     http_version: 
-  recorded_at: Thu, 26 Apr 2018 19:08:25 GMT
+  recorded_at: Thu, 26 Apr 2018 21:35:12 GMT
 recorded_with: VCR 4.0.0

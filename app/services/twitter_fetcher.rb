@@ -4,11 +4,11 @@ class TwitterFetcher
   PER_PAGE = 10
 
   require 'twitter'
-  attr_reader :query, :from_id
+  attr_reader :query, :max_id
 
-  def initialize(query, from_id: nil)
+  def initialize(query, max_id: nil)
     @query = query
-    @from_id = from_id
+    @max_id = max_id
   end
 
   def fetch
@@ -20,7 +20,7 @@ class TwitterFetcher
   private
 
   def request_tweets
-    client.search(query, count: PER_PAGE, result_type: 'recent', since_id: from_id)
+    client.search(query, count: PER_PAGE, max_id: max_id)
   end
 
   def client

@@ -5,8 +5,11 @@ require_relative 'app/services/twitter_fetcher.rb'
 
 get '/' do
   @query = params[:query]
-  @from_id = params[:from_id]
-  @tweets = TwitterFetcher.new(@query, from_id: @from_id).fetch if @query&.size > 0
+  @max_id = params[:max_id]
+
+  unless @query.to_s.empty?
+    @result = TwitterFetcher.new(@query, max_id: @max_id).fetch
+  end
 
   slim :index
 end

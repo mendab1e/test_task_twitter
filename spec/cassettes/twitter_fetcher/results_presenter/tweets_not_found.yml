@@ -35,11 +35,11 @@ http_interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Thu, 26 Apr 2018 19:26:12 GMT
+      - Thu, 26 Apr 2018 21:32:49 GMT
       Expires:
       - Tue, 31 Mar 1981 05:00:00 GMT
       Last-Modified:
-      - Thu, 26 Apr 2018 19:26:12 GMT
+      - Thu, 26 Apr 2018 21:32:49 GMT
       Ml:
       - A
       Pragma:
@@ -47,24 +47,24 @@ http_interactions:
       Server:
       - tsa_o
       Set-Cookie:
-      - guest_id=v1%3A152477077211767153; Expires=Sat, 25 Apr 2020 19:26:12 GMT; Path=/;
+      - guest_id=v1%3A152477836901965779; Expires=Sat, 25 Apr 2020 21:32:49 GMT; Path=/;
         Domain=.twitter.com
-      - personalization_id="v1_6B3TDnhJrjAgS4KPZfsD/A=="; Expires=Sat, 25 Apr 2020
-        19:26:12 GMT; Path=/; Domain=.twitter.com
+      - personalization_id="v1_aFhUI/8BqQmYpeem4178FA=="; Expires=Sat, 25 Apr 2020
+        21:32:49 GMT; Path=/; Domain=.twitter.com
       Status:
       - 200 OK
       Strict-Transport-Security:
       - max-age=631138519
       X-Connection-Hash:
-      - 76ce4d26868a3597725ef4fc58f45b61
+      - bfd0bb53bd37fcf6c720c0518f22ba0a
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
       - DENY
       X-Response-Time:
-      - '461'
+      - '122'
       X-Transaction:
-      - '00980ebe00285b0e'
+      - 003cfdb30039cf8d
       X-Tsa-Request-Body-Time:
       - '0'
       X-Twitter-Response-Tags:
@@ -77,10 +77,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"token_type":"bearer","access_token":"AAAAAAAAAAAAAAAAAAAAAFgYCQAAAAAA8Jvm2Ln8cJJnGX8ndCWg%2F9Fyt7U%3DFLi0WSOekrITfy2XqWrkJdTi8yKqPvMOipiugk9thYnJNWPPFf"}'
     http_version: 
-  recorded_at: Thu, 26 Apr 2018 19:26:12 GMT
+  recorded_at: Thu, 26 Apr 2018 21:32:49 GMT
 - request:
     method: get
-    uri: https://api.twitter.com/1.1/search/tweets.json?count=10&q=kfjsdnewqurewoue28712389fdckvdfaj&result_type=recent&since_id
+    uri: https://api.twitter.com/1.1/search/tweets.json?count=10&max_id&q=kfjsdnewqurewoue28712389fdckvdfaj
     body:
       encoding: UTF-8
       string: ''
@@ -105,24 +105,24 @@ http_interactions:
       Content-Disposition:
       - attachment; filename=json.json
       Content-Length:
-      - '324'
+      - '171'
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Thu, 26 Apr 2018 19:26:12 GMT
+      - Thu, 26 Apr 2018 21:32:49 GMT
       Expires:
       - Tue, 31 Mar 1981 05:00:00 GMT
       Last-Modified:
-      - Thu, 26 Apr 2018 19:26:12 GMT
+      - Thu, 26 Apr 2018 21:32:49 GMT
       Pragma:
       - no-cache
       Server:
       - tsa_o
       Set-Cookie:
-      - guest_id=v1%3A152477077286650949; Expires=Sat, 25 Apr 2020 19:26:12 GMT; Path=/;
+      - guest_id=v1%3A152477836947514452; Expires=Sat, 25 Apr 2020 21:32:49 GMT; Path=/;
         Domain=.twitter.com
-      - personalization_id="v1_0qFnEiUSo2IMEeAendvHcQ=="; Expires=Sat, 25 Apr 2020
-        19:26:12 GMT; Path=/; Domain=.twitter.com
+      - personalization_id="v1_zQP8TTC3tRa5Ny7L6FCXng=="; Expires=Sat, 25 Apr 2020
+        21:32:49 GMT; Path=/; Domain=.twitter.com
       Status:
       - 200 OK
       Strict-Transport-Security:
@@ -130,7 +130,7 @@ http_interactions:
       X-Access-Level:
       - read
       X-Connection-Hash:
-      - ff58ff3f0159899a9c19b3051d42e808
+      - 2c0c60ac523b5147e833aa8d26361be4
       X-Content-Type-Options:
       - nosniff
       X-Frame-Options:
@@ -138,20 +138,20 @@ http_interactions:
       X-Rate-Limit-Limit:
       - '450'
       X-Rate-Limit-Remaining:
-      - '448'
+      - '439'
       X-Rate-Limit-Reset:
-      - '1524771671'
+      - '1524778880'
       X-Response-Time:
-      - '129'
+      - '126'
       X-Transaction:
-      - 007b393f00666933
+      - '00497e75002a9cff'
       X-Twitter-Response-Tags:
       - BouncerCompliant
       X-Xss-Protection:
       - 1; mode=block; report=https://twitter.com/i/xss_report
     body:
       encoding: UTF-8
-      string: '{"statuses":[],"search_metadata":{"completed_in":0.018,"max_id":989586399119790080,"max_id_str":"989586399119790080","query":"kfjsdnewqurewoue28712389fdckvdfaj","refresh_url":"?since_id=989586399119790080&q=kfjsdnewqurewoue28712389fdckvdfaj&result_type=recent&include_entities=1","count":10,"since_id":0,"since_id_str":"0"}}'
+      string: '{"statuses":[],"search_metadata":{"completed_in":0.013,"max_id":0,"max_id_str":"0","query":"kfjsdnewqurewoue28712389fdckvdfaj","count":10,"since_id":0,"since_id_str":"0"}}'
     http_version: 
-  recorded_at: Thu, 26 Apr 2018 19:26:12 GMT
+  recorded_at: Thu, 26 Apr 2018 21:32:49 GMT
 recorded_with: VCR 4.0.0

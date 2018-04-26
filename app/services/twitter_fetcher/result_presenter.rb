@@ -16,20 +16,12 @@ class TwitterFetcher
       search_results.take(TwitterFetcher::PER_PAGE)
     end
 
-    def has_next_page?
+    def has_more?
       !metadata[:next_results].nil?
     end
 
-    def has_previous_page?
-      since_id > 0
-    end
-
-    def max_id
-      metadata[:max_id]
-    end
-
-    def since_id
-      metadata[:since_id]
+    def next_max_id
+      tweets.last.id - 1 if tweets.any?
     end
   end
 end
