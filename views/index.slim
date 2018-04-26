@@ -12,6 +12,26 @@ html
           input type="text" name="query" value=@query
         input type="submit"
 
-    - if @tweets
-      #tweets
-        p= @tweets
+    hr
+
+    - if @result
+      - if @result.successful?
+        - if @result.tweets.count == 0
+          p Nothing found by your request.
+
+        #pagination
+          - if @result.has_more?
+            a href="/?query=#{@query}&max_id=#{@result.next_max_id}" Next page
+        #tweets
+          - @result.tweets.each do |tweet|
+            .tweet
+              .tweet--username
+                p= "@#{tweet.user.screen_name}:"
+              .tweet--text
+                p= tweet.text
+        #pagination
+          - if @result.has_more?
+            a href="/?query=#{@query}&max_id=#{@result.next_max_id}" Next page
+      - else
+        #error
+          p We are sorry, but an error acquired during the fetching: #{@result.error}
