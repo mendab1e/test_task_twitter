@@ -2,6 +2,7 @@ doctype html
 html
   head
     title Test twitter application
+    link href="/css/application.css" rel="stylesheet" type="text/css" /
   body
     h1 Test twitter application
 
@@ -26,9 +27,9 @@ html
           - @result.tweets.each do |tweet|
             .tweet
               .tweet--username
-                p= "@#{tweet.user.screen_name}:"
+                p= "#{tweet.created_at}, @#{tweet.user.screen_name}:"
               .tweet--text
-                p= tweet.text
+                p= tweet.full_text
         #pagination
           - if @result.has_more?
             a href="/?query=#{@query}&max_id=#{@result.next_max_id}" Next page
