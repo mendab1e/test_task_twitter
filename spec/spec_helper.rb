@@ -4,7 +4,7 @@ require 'webmock/rspec'
 require 'rack/test'
 require 'vcr'
 
-ENV['RACK_ENV'] = 'development'
+ENV['RACK_ENV'] = 'test'
 
 require File.expand_path '../../application.rb', __FILE__
 

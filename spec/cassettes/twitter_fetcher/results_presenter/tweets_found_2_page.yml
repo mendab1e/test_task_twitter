@@ -1,0 +1,157 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/oauth2/token
+    body:
+      encoding: UTF-8
+      string: grant_type=client_credentials
+    headers:
+      User-Agent:
+      - TwitterRubyGem/6.2.0
+      Accept:
+      - "*/*"
+      Authorization:
+      - "<TOKEN>"
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '155'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 26 Apr 2018 19:36:44 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 26 Apr 2018 19:36:44 GMT
+      Ml:
+      - A
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_o
+      Set-Cookie:
+      - guest_id=v1%3A152477140401934181; Expires=Sat, 25 Apr 2020 19:36:44 GMT; Path=/;
+        Domain=.twitter.com
+      - personalization_id="v1_s7Bdwjtf3tN0xagf+52vDw=="; Expires=Sat, 25 Apr 2020
+        19:36:44 GMT; Path=/; Domain=.twitter.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Connection-Hash:
+      - ec82d9abb1374c7fcff68b47ec83befe
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Response-Time:
+      - '136'
+      X-Transaction:
+      - 00ff8d3f00355fab
+      X-Tsa-Request-Body-Time:
+      - '0'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Ua-Compatible:
+      - IE=edge,chrome=1
+      X-Xss-Protection:
+      - 1; mode=block; report=https://twitter.com/i/xss_report
+    body:
+      encoding: UTF-8
+      string: '{"token_type":"bearer","access_token":"AAAAAAAAAAAAAAAAAAAAAFgYCQAAAAAA8Jvm2Ln8cJJnGX8ndCWg%2F9Fyt7U%3DFLi0WSOekrITfy2XqWrkJdTi8yKqPvMOipiugk9thYnJNWPPFf"}'
+    http_version: 
+  recorded_at: Thu, 26 Apr 2018 19:36:44 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/search/tweets.json?count=10&q=cute%20capybara&result_type=recent&since_id=989486102154182657
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/6.2.0
+      Authorization:
+      - "<TOKEN>"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '320'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 26 Apr 2018 19:36:44 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 26 Apr 2018 19:36:44 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_o
+      Set-Cookie:
+      - guest_id=v1%3A152477140445403820; Expires=Sat, 25 Apr 2020 19:36:44 GMT; Path=/;
+        Domain=.twitter.com
+      - personalization_id="v1_wY7GDUxi98v3W61FpU3T6Q=="; Expires=Sat, 25 Apr 2020
+        19:36:44 GMT; Path=/; Domain=.twitter.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - 54af3849c8f5282d97054629dd12b5ce
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '450'
+      X-Rate-Limit-Remaining:
+      - '446'
+      X-Rate-Limit-Reset:
+      - '1524771671'
+      X-Response-Time:
+      - '145'
+      X-Transaction:
+      - 00ee531500b36e7d
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block; report=https://twitter.com/i/xss_report
+    body:
+      encoding: UTF-8
+      string: '{"statuses":[],"search_metadata":{"completed_in":0.034,"max_id":989589048363798530,"max_id_str":"989589048363798530","query":"cute+capybara","refresh_url":"?since_id=989589048363798530&q=cute%20capybara&result_type=recent&include_entities=1","count":10,"since_id":989486102154182657,"since_id_str":"989486102154182657"}}'
+    http_version: 
+  recorded_at: Thu, 26 Apr 2018 19:36:44 GMT
+recorded_with: VCR 4.0.0

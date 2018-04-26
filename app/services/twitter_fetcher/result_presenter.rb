@@ -17,7 +17,7 @@ class TwitterFetcher
     end
 
     def has_next_page?
-      metadata[:next_results]
+      !metadata[:next_results].nil?
     end
 
     def has_previous_page?
